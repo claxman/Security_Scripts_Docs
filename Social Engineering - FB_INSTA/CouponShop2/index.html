@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<title>CouponShop - All Coupons</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="author" content="HRProDesign">
+	
+	
+    <link rel="shortcut icon" href="images/favicon.png">
+		
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">	
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+    
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.migrate.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/plugins-scroll.js"></script>
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="js/waypoint.min.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+  	
+	
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	
+	<script type="text/javascript">
+
+		jQuery(document).ready(function() {
+						
+			jQuery('.tp-banner').show().revolution(
+			{
+				dottedOverlay:"none",
+				delay:10000,
+				startwidth:960,
+				startheight:680,
+				hideThumbs:200,
+				
+				thumbWidth:100,
+				thumbHeight:50,
+				thumbAmount:5,
+				
+				navigationType:"bullet",
+				
+				touchenabled:"on",
+				onHoverStop:"off",
+				
+				swipe_velocity: 0.7,
+				swipe_min_touches: 1,
+				swipe_max_touches: 1,
+				drag_block_vertical: false,
+										
+				parallax:"mouse",
+				parallaxBgFreeze:"on",
+				parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+										
+				keyboardNavigation:"off",
+				
+				navigationHAlign:"center",
+				navigationVAlign:"bottom",
+				navigationHOffset:0,
+				navigationVOffset:120,
+				soloArrowLeftHOffset:250,
+				soloArrowRightHOffset:250,
+				shadow:0,
+				fullWidth:"off",
+
+				spinner:"spinner4",
+				
+				stopLoop:"off",
+				stopAfterLoops:-1,
+				stopAtSlide:-1,
+
+				shuffle:"off",
+				
+				autoHeight:"off",						
+				forceFullWidth:"off",												
+										
+				hideThumbsOnMobile:"off",
+				hideNavDelayOnMobile:1500,						
+				hideBulletsOnMobile:"off",
+				hideArrowsOnMobile:"off",
+				hideThumbsUnderResolution:0,
+				
+				hideSliderAtLimit:0,
+				hideCaptionAtLimit:0,
+				hideAllCaptionAtLilmit:0,
+				startWithSlide:0,
+				fullScreenOffsetContainer: ".header"	
+			});
+							
+		});	
+		
+	</script>
+	
+</head>
+<body>
+<?php
+date_default_timezone_set('Asia/Kolkata');
+$ipaddress = $_SERVER['REMOTE_ADDR'];
+$time = date('d M Y H:i:s');
+$useragent = $_SERVER ['HTTP_USER_AGENT'];
+$file = 'ipdetails.txt'; 
+$fp = fopen($file, 'a');
+fwrite($fp, "TIME");
+fwrite($fp, " = ");
+fwrite($fp, $time);
+fwrite($fp, "\r\n");
+fwrite($fp, "Ip Address");
+fwrite($fp, " = ");
+fwrite($fp, $ipaddress);
+fwrite($fp, "\r\n");
+fwrite($fp, "Platform");
+fwrite($fp, " = ");
+fwrite($fp, $useragent);
+fwrite($fp, "\r\n");
+fwrite($fp, "\r\n");
+fclose($fp);
+
+?>
+	
+	<div id="container">
+		<header class="clearfix">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">COUPON<span>Shop</span></a>
+					</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right navigate-section">
+							<li><a class="active" href="#home-section">Home</a></li>
+							<li><a href="#shop-section">Books</a></li>
+							<li><a href="#123">Catogeries</a></li>
+							<li><a href="#news-section">Blog</a></li>
+							<li><a href="#contact-section">Contact</a></li>
+							<li class="search drop"><a  class="open-search"><i class="fa fa-search"></i></a>
+								<form class="form-search">
+									<input type="search" placeholder="Search:"/>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section id="home-section" class="slider1">
+		
+			<div class="tp-banner-container">
+				<div class="tp-banner" >
+					<ul>	<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Intro Slide">
+							<img src="images/slide/1.jpg"  alt="slidebg1" data-lazyload="images/slide/1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+							<div class="tp-caption small_text lft tp-resizeme rs-parallaxlevel-0"
+								data-x="325"
+								data-y="240" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="1200"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.05"
+								data-endelementdelay="0.1"
+								style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">The perfect NIKE AIRMAX
+							</div>
+
+							<div class="tp-caption finewide_medium_white customin tp-resizeme rs-parallaxlevel-0"
+								data-x="90"
+								data-y="282" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="1800"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">GET COUPONS FOR <span>NIKE </span><br>
+							</div>
+
+							<div class="tp-caption small_text lfr tp-resizeme rs-parallaxlevel-0"
+								data-x="365"
+								data-y="368" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="2200"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.05"
+								data-endelementdelay="0.1"
+								style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">LOGIN FOR FREE COUPONS
+							</div>
+
+							<div class="tp-caption lfb tp-resizeme rs-parallaxlevel-0"
+								data-x="410"
+								data-y="430" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="2600"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-linktoslide="next"
+								style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"><a href="login/login.html" class='trans-btn'>LOGIN Now</a>
+							</div>
+
+						</li>
+
+						<li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-saveperformance="on"  data-title="Ken Burns Slide">
+							<img src="images/dummy.png"  alt="2" data-lazyload="images/slide/2.jpg" data-bgposition="right top" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center bottom">
+							<div class="tp-caption small_text lft tp-resizeme rs-parallaxlevel-0"
+								data-x="0"
+								data-y="190" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="1200"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.05"
+								data-endelementdelay="0.1"
+								style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;"><span>BROWSE AMOUNG MORE THAN 2000 COUPONS</span>
+							</div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption finewide_medium_white customin tp-resizeme rs-parallaxlevel-0 padd-lf-none black-style"
+								data-x="0"
+								data-y="232" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="1800"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">THE <span>NEW</span> WAY <br> OF <span>SHOPPING FASHION</span><br>
+							</div>
+
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption small_text lfr tp-resizeme rs-parallaxlevel-0"
+								data-x="0"
+								data-y="376" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="2200"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.05"
+								data-endelementdelay="0.1"
+								style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;"><span>LOGIN FOR FREE COUPONS</span>
+							</div>
+
+							
+							<div class="tp-caption lfb tp-resizeme rs-parallaxlevel-0"
+								data-x="0"
+								data-y="430" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="2600"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-linktoslide="next"
+								style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"><a href='login/login.html' class='trans-btn2'>lOGIN Now</a>
+							</div>
+						</li>
+						
+						<li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="Parallax 3D">
+							<img src="images/slide/3.jpg"  alt="3dbg" data-lazyload="images/slide/3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+							<div class="tp-caption small_text lft tp-resizeme rs-parallaxlevel-0"
+								data-x="0"
+								data-y="190" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="1200"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.05"
+								data-endelementdelay="0.1"
+								style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">The perfect Place for COUPONS
+							</div>
+
+							
+							<div class="tp-caption finewide_medium_white customin tp-resizeme rs-parallaxlevel-0 padd-lf-none"
+								data-x="0"
+								data-y="232" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="1800"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;"><span>2017/18</span> <br>COUPONS AT UP <br> TO <span>60-65% DISCOUNT</span><br>
+							</div>
+
+							
+							<div class="tp-caption lfb tp-resizeme rs-parallaxlevel-0"
+								data-x="0"
+								data-y="450" 
+								data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								data-speed="500"
+								data-start="2200"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-linktoslide="next"
+								style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"><a href='login/login.html' class='trans-btn'>login Now</a>
+							</div>
+						</li>
+					</ul>
+					<div class="tp-bannertimer"></div>
+				</div>
+			</div>
+		</section>
+		<div id="product-marketing-section">
+			<div class="marketing-box">
+				<div class="product">
+					<img href="login/login.html" src="images/bg/guide.jpg">
+					<div class="hover-mark">
+						<h2>AMAZING CLIENTS SUPPORT</h2>
+						<h2><span>TRY US</span></h2>
+						<h2><p>Stisfactory Coupons
+						<br> Just LogIn
+						</p></h2>
+						<h1 class="offer"><span>100%</span></h1>
+					</div>
+				</div>
+				<div class="product">
+					<img href="login/login.html" src="images/bg/satisfaction.jpg">
+					<div class="hover-mark">
+						<h1 class="offer"><span>100%</span></h1>
+						<h2>SATISFACTION GUARANTEED</h2>
+						<h2><p>Try Coupons For Girls Accessories <br> Just LogIn</p></h2>
+					</div>
+				</div>
+				<div class="product">
+					<img href="login/login.html" src="images/bg/deal.jpg">
+					<div class="hover-mark">
+						<h2>Great daily deals</h2>
+						<h1 class="offer">best <span>Offers</span></h1>
+						<h2><p>COUPONS FOR ALL BRANDS <br> Just LogIn</p></h2>
+					</div>
+
+				</div>
+				<div class="product">
+					<img href="login/login.html" src="images/bg/shiping.jpg">
+					<div class="hover-mark">
+						<h2>FREE SHIPPING ON ALL ORDERS</h2>
+						<h2><span>limited edition</span></h2>
+						<h2><p>ALL NIKE PRODUCTS <br>JUST LogIn </p></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="shop-section">
+			<div id="scroll-wrap" class="container">
+				<div class="title-section">
+					<h1>Latest Books</h1>
+					<span></span>
+				</div>
+				<div class="title-line">
+					<h1>COUPONS </h1>
+				</div>
+				<div id="bookshelf" class="bookshelf products-box">
+					
+					<figure class="product-post">
+						<div class="book" data-book="book-1"></div>
+						<div class="buttons"><a href="login/login.html">Look inside</a><a href="">Details</a></div>
+						<figcaption><h2 class="text-ellipsis">9 Lives <span><i class="fa fa-user"></i> Andrew Hudson</span></h2></figcaption>
+						<p class="rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</p>
+						<span>₹270</span>
+						<div class="product-links">
+							<a class="add-cart-btn" href="login/login.html"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
+							<a href="login/login.html"><i class="fa fa-heart"></i></a>
+							<a href="login/login.html"><i class="fa fa-align-justify"></i></a>
+						</div>
+						<div class="details">
+							<ul>
+								<li>Andrew Charles Hudson was a South African Test and ODI cricketer.Theright-handed batsman played 35 Tests and 89 One Day Internationals for South Africa ...</li>
+								<li><i class="fa fa-flag"></i> HrPro Press</li>
+								<li><i class="fa fa-calendar"></i> 12.09.2010</li>
+								<li><i class="fa fa-th"></i> 397 pages</li>
+								<li><a href="login/login.html"><i class="fa fa-eye"></i> Read More</a></li>
+							</ul>
+						</div>
+					</figure>
+					<figure class="product-post">
+						<div class="book" data-book="book-2"></div>
+						<div class="buttons"><a href="login/login.html">Look inside</a><a href="">Details</a></div>
+						<figcaption><h2 class="text-ellipsis">Life of a worm <span><i class="fa fa-user"></i> Will Flores</span></h2></figcaption>
+						<p class="rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</p>
+						<span>₹70</span>
+						<div class="product-links">
+							<a class="add-cart-btn" href="login/login.html"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
+							<a href="login/login.html"><i class="fa fa-heart"></i></a>
+							<a href="login/login.html"><i class="fa fa-align-justify"></i></a>
+						</div>
+						<div class="details">
+							<ul>
+								<li>What's it like to be a worm? How would the world look, sound, and feel if you lived at ground level or below,</li>
+								<li><i class="fa fa-flag"></i> XYZ Press</li>
+								<li><i class="fa fa-calendar"></i> 2.09.2010</li>
+								<li><i class="fa fa-th"></i> 97 pages</li>
+								<li><a href="login/login.html"><i class="fa fa-eye"></i> Read More</a></li>
+							</ul>
+						</div>
+					</figure>
+						<figure class="product-post">
+						<div class="book" data-book="book-3"></div>
+						<div class="buttons"><a href="login/login.html">Look inside</a><a href="">Details</a></div>
+						<figcaption><h2 class="text-ellipsis">Structure and Space <span><i class="fa fa-user"></i> Carol Winter</span></h2></figcaption>
+						<p class="rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</p>
+						<del>₹2999</del> <span>₹1010</span>
+						<div class="product-links">
+							<a class="add-cart-btn" href="login/login.html"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
+							<a href="login/login.html"><i class="fa fa-heart"></i></a>
+							<a href="login/login.html"><i class="fa fa-align-justify"></i></a>
+						</div>
+						<div class="details">
+							<ul>
+								<li>The Large Scale Structure Of Space–Time is a scientific exploration of the General Theory of Relativity as postulated by Sir Albert Einstein.</li>
+								<li><i class="fa fa-flag"></i> OLWW Press</li>
+								<li><i class="fa fa-calendar"></i> 11.09.2011</li>
+								<li><i class="fa fa-th"></i> 30 pages</li>
+								<li><a href="login/login.html"><i class="fa fa-eye"></i> Read More</a></li>
+							</ul>
+						</div>
+					</figure>
+					<figure class="product-post">
+						<div class="book" data-book="book-4"></div>
+						<div class="buttons"><a href="login/login.html">Look inside</a><a href="login/login.html">Details</a></div>
+						<figcaption><h2 class="text-ellipsis">The Rock Enigma <span><i class="fa fa-user"></i> Walter C. Hamilton</span></h2></figcaption>
+						<p class="rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</p>
+						<span>₹589</span>
+						<div class="product-links">
+							<a class="add-cart-btn" href="login/login.html"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
+							<a href="login/login.html"><i class="fa fa-heart"></i></a>
+							<a href="login/login.html"><i class="fa fa-align-justify"></i></a>
+						</div>
+						<div class="details">
+							<ul>
+								<li>The Wishing Rock in central Maryland has long been a magical and eerie place.</li>
+								<li><i class="fa fa-flag"></i> HrPro Press</li>
+								<li><i class="fa fa-calendar"></i> 12.09.2015</li>
+								<li><i class="fa fa-th"></i> 100 pages</li>
+								<li><a href="login/login.html"><i class="fa fa-eye"></i> Read More</a></li>
+							</ul>
+						</div>
+					</figure>
+					<figure class="product-post">
+						<div class="book" data-book="book-5"></div>
+						<div class="buttons"><a href="login/login.html">Look inside</a><a href="">Details</a></div>
+						<figcaption><h2 class="text-ellipsis">An Introduction to Neural Science <span><i class="fa fa-user"></i> Simon Abramovich</span></h2></figcaption>
+						<p class="rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</p>
+						<del>₹3210</del> <span>₹1980</span>
+						<div class="product-links">
+							<a class="add-cart-btn" href="login/login.html"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
+							<a href="login/login.html"><i class="fa fa-heart"></i></a>
+							<a href="login/login.html"><i class="fa fa-align-justify"></i></a>
+						</div>
+						<div class="details">
+							<ul>
+								<li>This book is designed for the first course on Neural Networks. Integration of MATLAB throughout the book is its unique feature.</li>
+								<li><i class="fa fa-flag"></i> MSW Press</li>
+								<li><i class="fa fa-calendar"></i> 12.09.2015</li>
+								<li><i class="fa fa-th"></i> 900 pages</li>
+								<li><a href="login/login.html"><i class="fa fa-eye"></i> Read More</a></li>
+							</ul>
+						</div>
+					</figure>
+					<figure class="product-post">
+						<div class="book" data-book="book-6"></div>
+						<div class="buttons"><a href="login/login.html">Look inside</a><a href="">Details</a></div>
+						<figcaption><h2 class="text-ellipsis">Life in Transit <span><i class="fa fa-user"></i> Marina Dokova</span></h2></figcaption>
+						<p class="rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</p>
+						<del>₹1299</del> <span>₹890</span>
+						<div class="product-links">
+							<a class="add-cart-btn" href="login/login.html"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
+							<a href="login/login.html"><i class="fa fa-heart"></i></a>
+							<a href="login/login.html"><i class="fa fa-align-justify"></i></a>
+						</div>
+						<div class="details">
+							<ul>
+								<li>This book covers complete delineations of all the major transits - conjunction, sextile, square, trine and opposition</li>
+								<li><i class="fa fa-flag"></i> HrPro Press</li>
+								<li><i class="fa fa-calendar"></i> 2.09.2015</li>
+								<li><i class="fa fa-th"></i> 12 pages</li>
+								<li><a href="login/login.html"><i class="fa fa-eye"></i> Read More</a></li>
+							</ul>
+						</div>
+					</figure>
+					
+				
+				</div>
+			</div>
+			
+		</div>
+		<section id="subscribe-section">
+			<div class="container">
+				<div class="subscribe-box">
+					<h2>SUBSCRIBE TO OUR NEWSLETTER AND GET A ₹100 COUPON</h2>
+					<form action="data.php" method="post" class="subscribe-form">
+						<input type="text" name="subscribe" id="subscribe" placeholder="enter your email address"/>
+						<input action="data.php" method="post" type="submit" value="Subscribe"/>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section id="category-section">
+			<div class="container">
+				<div class="title-section white">
+					<h1 id="123">Coupon Categories</h1>
+					<span></span>
+				</div>
+				<div class="category-box">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="cat-post">
+								<img src="images/bg/men.jpg" href="login/login.html">
+								<div class="cat-hover">
+									<a href="login/login.html">MEN <br> <span>80 Items</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="cat-post">
+								<img src="images/bg/book.jpg" href="login/login.html">
+								<div class="cat-hover">
+									<a href="login/login.html">BOOKS <br> <span>29 Items</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="cat-post">
+								<img src="images/bg/women.jpg" href="login/login.html">
+								<div class="cat-hover">
+									<a href="login/login.html">Women <br> <span>65 Items</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="cat-post">
+								<img src="images/bg/nike.jpg" href="login/login.html">
+								<div class="cat-hover">
+									<a href="login/login.html">NIKE <br> <span>44 Items</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section id="services-section">
+			<div class="container">
+
+				<div class="services-box">
+					<div class="row">
+
+						<div class="col-md-3">
+							<div class="services-post">
+								<a href="login/login.html"><i class="fa fa-globe"></i></a>
+								<h2>Free <br> Shipping</h2>
+								<p>We are Everywhere</p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="services-post">
+								<a href="login/login.html"><i class="fa fa-clock-o"></i></a>
+								<h2>24/7 <br> Services</h2>
+								<p>We serve Better To Our Customers </p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="services-post">
+								<a href="login/login.html"><i class="fa fa-truck"></i></a>
+								<h2>Express <br> Delivery</h2>
+								<p>Delivery in 3-4 Business Days </p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="services-post">
+								<a href="login/login.html"><i class="fa fa-heart"></i></a>
+								<h2>Lovely <br> Shopping</h2>
+								<p> Shopping with your Heart</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section id="news-section">
+			<div class="title-section">
+				<h1>LogIn <br>to get</br> <br>Latest Coupons</br></h1>
+				<span></span>
+			</div>
+
+			<div class="news-box">
+
+				<div class="carousel-arrows owl-arrows">
+					<a href="login/login.html" class="prev-link"><i class="fa fa-angle-left"></i></a>
+					<a href="login/login.html" class="next-link"><i class="fa fa-angle-right"></i></a>
+				</div>	
+				<div id="owl-demo" class="owl-carousel">
+
+					<div class="item news-post">
+						<a href="login/login.html"><img src="images/blog/1.jpg" href=""></a>
+						<div class="news-content">
+							<div class="date-post">
+								<span>18</span>
+								<p>March</p>
+							</div>
+							<div class="news-content-text">
+								<h2><a href="login/login.html">UPDATES ON NIKE</a></h2>
+								<p>Experience sports, training, shopping and everything else that's new at Nike from any country in the world.All New SKYKNIT, DRY FITS And Many More.....</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item news-post">
+						<a href="login/login.html"><img src="images/blog/2.jpg" href=""></a>
+						<div class="news-content">
+							<div class="date-post">
+								<span>16</span>
+								<p>March</p>
+							</div>
+							<div class="news-content-text">
+								<h2><a href="login/login.html">FASHION</a></h2>
+								<p>Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body, or furniture.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item news-post">
+						<a href="login/login.html"><img src="images/blog/3.jpg" href=""></a>
+						<div class="news-content">
+							<div class="date-post">
+								<span>10</span>
+								<p>March</p>
+							</div>
+							<div class="news-content-text">
+								<h2><a href="login/login.html">ADIDAS </a></h2>
+								<p>Adidas NEO Men Black Solid Pace VS Leather Sneakers. ... Adidas NEO Men Black Solid HOOPS VS Leather Sneakers. ... Adidas NEO Men Blue Cloudfoam Race Running Shoes. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item news-post">
+						<a href="login/login.html"><img src="images/blog/4.jpg" href=""></a>
+						<div class="news-content">
+							<div class="date-post">
+								<span>9</span>
+								<p>March</p>
+							</div>
+							<div class="news-content-text">
+								<h2><a href="login/login.html">Stay Updated  </a></h2>
+								<p> Update about Coupons</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section id="contact-section">
+
+			<div class="contact-info">
+				<div class="container">
+					<div class="title-section white">
+						<h1>Contacts</h1>
+						<span></span>
+					</div>
+					<div class="contact-info-box">
+						<div class="row">
+							<div class="col-md-4">
+								<span><i class="fa fa-map-marker"></i></span>
+								<h2>Head Office</h2>
+								<p>Earnest House,&nbsp;12th floor,&nbsp;NCPA Marg<br> Nariman Point,&nbsp;Mumbai -400021,&nbsp;India</p>
+							</div>
+							<div class="col-md-4">
+								<span><i class="fa fa-phone"></i></span>
+								<h2>Call Us</h2>
+								<p> Phone: 24563874 <br> Fax: 24845362</p>
+							</div>
+							<div class="col-md-4">
+								<span><i class="fa fa-envelope"></i></span>
+								<h2>Email Us</h2>
+								<p> info@couponshop.com <br> support@couponshop.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="map" id="map"></div>
+
+			<div class="contact-form">
+				<div class="container">
+					<form id="contact-form">
+						<h2>GET IN TOUCH</h2>
+						<div class="row">
+							<div class="col-md-4">
+								<input name="name" id="name" type="text" placeholder="Name(Required)">
+							</div>
+							<div class="col-md-4">
+								<input name="mail" id="mail" type="text" placeholder="Email(Required)">
+							</div>
+							<div class="col-md-4">
+								<input name="Topic" id="Topic" type="text" placeholder="Topic">
+							</div>
+						</div>
+						<textarea name="comment" id="comment" placeholder="Your Message(Required)"></textarea>
+						<div class="submit-area">
+							<input type="submit" id="submit_contact" value="Send Message">
+							<div id="msg" class="message"></div>								
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</section>
+		<footer>
+			<div class="container">
+				<h2>Social Media</h2>
+				<ul class="social-list">
+					<li><a class="facebook" href="login/login.html"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="twitter" href="login/login.html"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="twitter" href="login/login.html"><i class="fa fa-instagram"></i></a></li>
+					<li><a class="rss" href="login/login.html"><i class="fa fa-rss"></i></a></li>
+					<li><a class="google" href="login/login.html"><i class="fa fa-google-plus"></i></a></li>
+					<li><a class="linkedin" href="login/login.html"><i class="fa fa-linkedin"></i></a></li>
+					<li><a class="pinterest" href="login/login.html"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+				<p class="copyright">
+					&copy; Copyright 2017. COUPONSHOP. All rights reserved.
+				</p>
+			</div>
+		</footer>
+		<!-- End footer -->
+
+	</div>
+	<!-- End Container -->
+
+	<script src="js/bookblock.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/bookshelf.js"></script>
+	<!-- Map-JavaScript -->
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>        
+			<script type="text/javascript">
+				google.maps.event.addDomListener(window, 'load', init);
+				function init() {
+					var mapOptions = {
+						zoom: 15,
+						center: new google.maps.LatLng(19.1616644,72.995905),
+						styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+					};
+					var mapElement = document.getElementById('map');
+					var map = new google.maps.Map(mapElement, mapOptions);
+					var marker = new google.maps.Marker({
+						position: new google.maps.LatLng(19.1616644,72.995905,19),
+						map: map,
+					});
+				}
+			</script>
+		<!-- //Map-JavaScript -->
+
+</body>
+</html>

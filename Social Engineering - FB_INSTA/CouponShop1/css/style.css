@@ -1,0 +1,119 @@
+body{
+    background:#ddd;
+    color: #838080;
+    font-family: 'Monda', sans-serif;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    padding: 20px 0px;;
+}
+p{
+    text-align: center;
+    color: #838080;
+    margin-top: 10px;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+    margin: 0 auto;
+    padding: 3px;
+    
+}
+li:hover{
+    background: #ddd;
+}
+ul li a{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+a{
+    color: #838080;
+}
+a:hover{
+    color: black;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+p i{
+    padding: 5px;
+    color: black;
+}
+h3{
+    margin: 0px;
+    text-align: center;
+    color: #838080;
+    font-weight: 700;
+}
+h4{
+    text-align: center;
+    color: #838080;
+}
+h5{
+    text-align: center;
+    font-weight: 700;
+}
+form{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.logo{
+    margin-top: 7px;
+}
+.well {
+    padding: 8px;
+    display: block;
+    text-align: center;
+    height: auto;
+}
+
+.col-md-6 p{
+   text-align: right;
+    margin-top: 10px;
+}
+.cat{
+    text-align: left;
+}
+.des{
+    text-align: center;
+}
+
+.tags{
+    padding-bottom: auto;
+}
+
+.comments{
+    text-align: left;
+}
+.comments_img
+{
+    width: 170px;
+    height: 180px;
+}
+.reply{
+    text-align: right;
+}
+.pagi-1{
+    float: left;
+}
+.pagi-2{
+    float: right;
+}
+.logo{
+    padding: 0px;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.circle i{
+    margin-top: 15px;
+    
+}
